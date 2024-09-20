@@ -90,8 +90,9 @@ nav ul {
 }
 
 nav li {
-  display: inline;
+  display: flex;
   text-align: center;
+  justify-content: center;
   flex: 1;
 }
 
@@ -101,6 +102,11 @@ nav a {
   text-transform: uppercase;
   text-decoration: none;
   color: black;
+}
+
+nav a:hover {
+  outline: 1px solid black;
+  outline-offset: 24px; 
 }
 
 nav .search {

@@ -29,7 +29,7 @@
     </ul>
 
     <form class="search">
-      <input type="search" name="q" placeholder="Search query">
+      <input type="search" name="q" placeholder="Search query" aria-label="Search">
       <input type="submit" value="Go!">
     </form>
   </nav>
@@ -59,20 +59,21 @@
         <br><br>
       </p>
       <br><br>
-      <table>
+      <table aria-describedby="tableDesc">
+        <caption>Bears and their characteristics in different environments</caption>
         <thead>
           <tr>
-            <td>Bear Type</td>
-            <td>Coat</td>
-            <td>Adult size</td>
-            <td>Habitat</td>
-            <td>Lifespan</td>
-            <td>Diet</td>
+            <th scope="col">Bear Type</th>
+            <th scope="col">Coat</th>
+            <th scope="col">Adult size</th>
+            <th scope="col">Habitat</th>
+            <th scope="col">Lifespan</th>
+            <th scope="col">Diet</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Wild</td>
+            <th scope="row">Wild</th>
             <td>Brown or black</td>
             <td>1.4 to 2.8 meters</td>
             <td>Woods and forests</td>
@@ -80,7 +81,7 @@
             <td>Fish, meat, plants</td>
           </tr>
           <tr>
-            <td>Urban</td>
+            <th scope="row">Urban</th>
             <td>North Face</td>
             <td>18 to 22</td>
             <td>Condos and coffee shops</td>
@@ -89,7 +90,9 @@
           </tr>
         </tbody>
       </table>
-
+      
+      <p id="tableDesc">This table provides information about different types of bears, including their coats, adult sizes, habitats, lifespans, and diets.</p>
+      
       <font size="5">Habitats and Eating habits</font>
       <p>
 
@@ -147,7 +150,8 @@
 
       </aside>
       <section class="comments">
-        <div class="show-hide">Show comments</div>
+        <div class="show-hide" tabindex="0">Show comments</div>
+                          
 
         <div class="comment-wrapper">
 
@@ -155,11 +159,11 @@
 
           <form class="comment-form">
             <div class="flex-pair">
-              Your name:
+              <label for="name">Your name:</label>
               <input type="text" name="name" id="name" placeholder="Enter your name">
             </div>
             <div class="flex-pair">
-              Your comment:
+              <label for="comment">Your comment:</label>
               <input type="text" name="comment" id="comment" placeholder="Enter your comment">
             </div>
             <div>
@@ -204,7 +208,7 @@
     <p>©Copyright 2050 by nobody. All rights reversed.</p>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 

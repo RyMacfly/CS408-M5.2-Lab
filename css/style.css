@@ -218,6 +218,9 @@ audio {
   padding: 0 3rem 1rem;
 }
 
+.flex-pair label {
+  margin-right: 10px;
+}
 .comment-form label {
   align-self: center;
   flex: 2;
